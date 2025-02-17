@@ -1,0 +1,97 @@
+.project{
+    position: relative;
+    background-color: black;
+    color: white;
+    height: 200vh;
+}
+
+.project .head{
+    position: absolute;
+    left: 12%;
+    top: 6%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 250%;
+    border-bottom: 1px solid white;
+}
+
+.project .project-wrapper{
+    background-color: black;
+    position: relative;
+    top: 12%;
+    height: 85%;
+}
+
+.project .project-wrapper .project-box-wrapper{
+    position: absolute;
+    width: 30%;
+    height: 35%;
+    top: 10%;
+    left: 5%;
+    border-right: 1px solid gray;
+    transition: 1s;
+}
+
+.project .project-wrapper .project-box-wrapper:hover{
+    border: 1px solid cyan;
+    background-color: rgb(27, 27, 27);
+}
+
+.project .project-wrapper .project-wrapper-box1{
+    left: 35%;
+}
+
+.project .project-wrapper .project-wrapper-box2{
+    left: 65%;
+    border-right: 0px solid cyan;
+}
+
+.project .project-wrapper .project-wrapper-box3{
+    left: 20%;
+    top: 45%;
+}
+
+.project .project-wrapper .project-wrapper-box4{
+    left: 50%;
+    top: 45%;
+    border-right: 0px solid cyan;
+}
+
+.project .project-wrapper .project-box-wrapper .project-box{
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    top: 10%;
+    left: 10%;
+    border-top: 1px solid cyan;
+}
+
+.project .project-wrapper .project-box-wrapper .project-box .number{
+    position: absolute;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 130%;
+    top: 4%;
+    left: 2%;
+}
+
+.project .project-wrapper .more-projects{
+    position: absolute;
+    border: 1px solid cyan;
+    height: 5%;
+    width: 11%;
+    top: 86%;
+    left: 45%;
+}
+
+.project .project-wrapper .more-projects p{
+    position: relative;
+    text-align: center;
+    color: white;
+    top: 32%;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 120%;
+}
+
+.project .project-wrapper .more-projects:hover{
+    box-shadow: -1px -1px 12px cyan;
+}

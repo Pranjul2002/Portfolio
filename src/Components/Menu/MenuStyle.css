@@ -1,0 +1,43 @@
+.menu{
+    background-color: black;
+    height: 10vh;
+    font-family: "Abril Fatface", serif;
+}
+
+.menu .menu-bar{
+    position: relative;
+    height: 100%;
+}
+
+.menu-bar .logo{
+    position: absolute;
+    width: 3.5%;
+    left: 15%;
+    top: 12%;
+    border-radius: 50%;
+    border: 3px solid cyan;
+}
+
+.menu .menu-bar .menu-option-box{
+    position: relative;
+    height: 80%;
+    top: 10%;
+    text-align: right;
+}
+
+.menu .menu-bar .menu-option-box .menu-option-item{
+    padding: 1%;
+    margin-right: 3%;
+    position: relative;
+    top: 38%;
+    text-decoration: none;
+    color: white;
+    font-size: 130%;
+    font-weight: bold;
+    border: 1px solid black;
+    transition: 1s;
+}
+
+.menu .menu-bar .menu-option-box .menu-option-item:hover{
+    border: 1px solid gray;
+}

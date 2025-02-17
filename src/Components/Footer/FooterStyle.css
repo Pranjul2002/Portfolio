@@ -1,0 +1,52 @@
+.footer{
+    height: 60vh;
+    background-color: black;
+    color: cyan;
+}
+
+.footer .footer-wrapper{
+    position: relative;
+    height: 100%;
+}
+
+.footer .footer-wrapper .footer-head{
+    position: relative;
+    text-align: center;
+    top: 15%;
+    font-family: "Abril Fatface", serif;
+    font-size: 280%;
+}
+
+.footer .footer-wrapper .socialmedia-wrapper{
+    position: relative;
+    height: 14%;
+    top: 30%;
+}
+
+.footer .footer-wrapper .socialmedia-wrapper .socialmedia{
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    left: 36.5%;
+}
+
+
+.footer .footer-wrapper .socialmedia-wrapper .socialmedia img{
+    filter: invert(100%);
+    border-radius: 100px;
+    margin-left: 15%;
+    margin-top: 1%;
+    width: 10%;
+}
+
+.footer .footer-wrapper .socialmedia-wrapper .socialmedia img:hover{
+    box-shadow: 1px 1px 15px rgb(68, 68, 68);
+}
+
+.made-by{
+    position: relative;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 120%;
+    top: 60%;
+}

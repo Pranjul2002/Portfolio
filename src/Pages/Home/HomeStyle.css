@@ -1,0 +1,56 @@
+.home{
+    height:90vh;
+    background-color: black;
+    color: white;
+}
+
+.home .home-left-box{
+    position: absolute;
+    width: 30%;
+    height: 40%;
+    top: 32%;
+    left: 22%;
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+    z-index: 2;
+}
+
+.name-head{
+    position: relative;
+    font-family: "Italiana", sans-serif;
+    font-size: 700%;
+    font-weight: bolder;
+    color: rgb(0, 243, 243);
+}
+
+.designation-box{
+    position: relative;
+    font-family: "Abril Fatface", serif;
+    font-size: 240%;
+    font-weight: bold;
+    top: 5%;
+}
+
+.quote{
+    position: relative;
+    top: 10%;
+    font-family: "Cinzel", serif;
+    font-size: 120%;
+}
+
+.home .home-right-box{
+    position: absolute;
+    background-color: gray;
+    width: 28%;
+    height: 50%;
+    top: 27%;
+    left: 56%;
+    border-radius: 100%;
+}
+
+.home .home-right-box .self-image{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
