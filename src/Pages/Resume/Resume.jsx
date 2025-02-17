@@ -12,7 +12,7 @@ const Resume = () => {
                     Get Resume..
                 </div>
                 <div className="resume-download-button">
-                    <a href=''><button type='button'>Resume</button></a>
+                    <button type='button'>Resume</button>
                 </div>
             </div>
         </div>
