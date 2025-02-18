@@ -1,24 +1,52 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
-import '../Menu/MenuStyle.css'
-import LogoAvatar from '../Menu/images/logo.jpeg'
+import '../Menu/MenuStyle.css';
+import LogoAvatar from '../Menu/images/logo.jpeg';
 
 const Menu = () => {
+
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen); // Toggle the menu open/close state
+  };
+
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.classList.add('no-scroll'); // Disable scrolling when menu is open
+    } else {
+      document.body.classList.remove('no-scroll');
+    }
+    return () => document.body.classList.remove('no-scroll'); // Cleanup when component unmounts
+  }, [isMenuOpen]);
+
+  const handleLinkClick = () => {
+    if (isMenuOpen) {
+      setIsMenuOpen(false); // Close menu on link click
+    }
+  };
+
   return (
-    <div className='menu'>
+    <div className={`menu ${isMenuOpen ? 'open' : ''}`}>
         <div className="menu-bar">
-          <img src={LogoAvatar} alt="" className='logo'/>
-            <div className="menu-option-box">
-                <Link to="/" className='menu-option-item'>Home</Link>
-                <Link to="/resume" className='menu-option-item'>Resume</Link>
-                <Link to="/projects" className='menu-option-item'>Projects</Link>
-                <Link to="/skills" className='menu-option-item'>Skills</Link>
-                <Link to="/" className='menu-option-item'>About</Link>
+          <button className="menu-button" onClick={toggleMenu}>
+            ☰
+          </button>
+          <img src={LogoAvatar} alt="Logo" className='logo'/>
+            <div className={`menu-option-box ${isMenuOpen ? 'show' : ''}`}>
+              <button className="menu-button-X" onClick={toggleMenu}>
+                X
+              </button>
+                <Link to="/" className='menu-option-item' onClick={handleLinkClick}>Home</Link>
+                <Link to="/resume" className='menu-option-item' onClick={handleLinkClick}>Resume</Link>
+                <Link to="/projects" className='menu-option-item' onClick={handleLinkClick}>Projects</Link>
+                <Link to="/skills" className='menu-option-item' onClick={handleLinkClick}>Skills</Link>
+                <Link to="/" className='menu-option-item' onClick={handleLinkClick}>About</Link>
             </div>
         </div>
     </div>
-  )
-}
+  );
+};
 
-export default Menu
+export default Menu;
