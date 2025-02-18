@@ -10,6 +10,7 @@ function Skills(){
                 <div className="list">
                     <li>java</li>
                     <li>C</li>
+                    <li>Python</li>
                     <li>HTML</li>
                     <li>CSS</li>
                 </div>

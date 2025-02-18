@@ -61,3 +61,36 @@
     width: 15%;
     left: 78%;
 }
+
+
+@media screen and (max-width: 512px) {
+    .skills-body{
+        position: relative;
+        height: 250vh;
+    }
+
+    .skills-body .skills-component{
+        position: absolute;
+        width: 100%;
+        height: 20%;
+        border: none;
+        left: 0;
+        top: 5%;
+    }
+
+    .skills-body .Language-body{
+        
+    }
+    
+    .skills-body .Framework-body{
+        top: 28%;
+    }
+    
+    .skills-body .DevlopmentTools-body{
+        top: 51%;
+    }
+    
+    .skills-body .Databases-body{
+        top: 74%;
+    }
+}

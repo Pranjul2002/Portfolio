@@ -52,3 +52,24 @@
     background-color: cyan;
     color: black;
 }
+
+@media screen and (max-width: 512px) {
+    .resume-download-box-wrapper{
+        position: absolute;
+        left: 0;
+        width: 100%;
+        border: none;
+    }
+
+    .resume-header{
+        left: 0%;
+        text-align: center;
+    }
+
+    .resume-download-button button{
+        position: absolute;
+        width: 50%;
+        left: 25%;
+        top: -60px;
+    }
+}
