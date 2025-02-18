@@ -1,0 +1,14 @@
+.footer-lazy-loading{
+    background-color: black;
+    height: 50vh;
+    animation-name: footer-ani;
+    animation-duration: 4s;
+}
+
+@keyframes footer-ani {
+    0%   {background-color: black;}
+    25%  {background-color: rgb(37, 37, 37);}
+    50%  {background-color: black;}
+    75% {background-color: rgb(37, 37, 37);}
+    100% {background-color: black;}
+}

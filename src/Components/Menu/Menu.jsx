@@ -1,15 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { lazy, Suspense } from 'react';
 
 import '../Menu/MenuStyle.css';
 import LogoAvatar from '../Menu/images/logo.jpeg';
+//const LogoAvatar=lazy((()=>import('../Menu/images/logo.jpeg')))
 
 const Menu = () => {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen); // Toggle the menu open/close state
+    setIsMenuOpen(!isMenuOpen);
   };
 
   useEffect(() => {
@@ -33,7 +35,8 @@ const Menu = () => {
           <button className="menu-button" onClick={toggleMenu}>
             ☰
           </button>
-          <img src={LogoAvatar} alt="Logo" className='logo'/>
+            <img src={LogoAvatar} alt="Logo" className='logo'/>
+          
             <div className={`menu-option-box ${isMenuOpen ? 'show' : ''}`}>
               <button className="menu-button-X" onClick={toggleMenu}>
                 X
