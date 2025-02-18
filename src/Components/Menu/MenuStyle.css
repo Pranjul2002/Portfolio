@@ -50,13 +50,17 @@
     color: black;
 }
 
-@media screen and (max-width: 512px) {
+@media screen and (max-width: 600px) {
     .menu.open{
         position: absolute;
-        background-color: red;
         width: 100%;
         height: 100%;
         z-index: 5;
+    }
+
+    .menu-bar .logo{
+        width: 10%;
+        top: 18%;
     }
 
     .menu .menu-button {

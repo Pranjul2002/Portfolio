@@ -1,5 +1,5 @@
 .footer{
-    height: 60vh;
+    height: 70vh;
     background-color: black;
     color: cyan;
 }
@@ -49,4 +49,36 @@
     font-family: 'Courier New', Courier, monospace;
     font-size: 120%;
     top: 60%;
+}
+
+@media screen and (max-width: 600px) {
+    .footer .footer-wrapper .footer-head{
+        top: 10%;
+    }
+
+    .footer .footer-wrapper .socialmedia-wrapper{
+        position: relative;
+        height: 65%;
+        top: 12%;
+    }
+
+    .footer .footer-wrapper .socialmedia-wrapper .socialmedia{
+        width: 50%;
+        left: 25%;
+    }
+
+    .footer .footer-wrapper .socialmedia-wrapper .socialmedia img{
+        display: flex;
+        filter: invert(100%);
+        border-radius: 100px;
+        margin-left: 35%;
+        margin-top: 14%;
+        width: 25%;
+        box-shadow: 1px 1px 15px rgb(68, 68, 68);
+    }
+
+    .made-by{
+        top: 8%;
+    }
+    
 }

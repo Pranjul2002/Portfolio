@@ -63,7 +63,7 @@
 }
 
 
-@media screen and (max-width: 512px) {
+@media screen and (max-width: 600px) {
     .skills-body{
         position: relative;
         height: 250vh;
