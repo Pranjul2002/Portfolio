@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { lazy, Suspense } from 'react';
 
 import '../Menu/MenuStyle.css';
 import LogoAvatar from '../Menu/images/logo.jpeg';
