@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+import StockMarketPricePredictionProjectImg from './Images/stock.jpg'
+
 import '../Projects/ProjectStyle.css'
 
 const Project = () => {
@@ -8,11 +10,18 @@ const Project = () => {
     <div className='project'>
         <div className="head">Projects</div>
         <div className="project-wrapper">
+            <Link to="https://github.com/Pranjul2002" target='_'>
             <div className="project-box-wrapper">
                 <div className="project-box">
                     <div className="number">01</div>
+                    <h1>Stock Market Price Prediction</h1>
+                    <p>Represent past Stock which help to analyse more acuratly and it give feature of Pridicting future price of stock based on input year. <br />
+                        <h4> <u> USED TECH-STACK</u> : Python, Flask, Reactjs, JavaScript, HTML, CSS. </h4>
+                    </p>
+                    <img src={StockMarketPricePredictionProjectImg} alt="" className='stock-prediction-img'/>
                 </div>
             </div>
+            </Link>
             <div className="project-box-wrapper project-wrapper-box1">
                 <div className="project-box">
                     <div className="number">02</div>
