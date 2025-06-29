@@ -41,7 +41,7 @@
 
 .project .project-wrapper .project-wrapper-box2{
     left: 65%;
-    border-right: 0px solid cyan;
+    border-right: 0px solid black;
 }
 
 .project .project-wrapper .project-wrapper-box3{
@@ -52,7 +52,7 @@
 .project .project-wrapper .project-wrapper-box4{
     left: 50%;
     top: 45%;
-    border-right: 0px solid cyan;
+    border-right: 0px solid black;
 }
 
 .project .project-wrapper .project-box-wrapper .project-box{
@@ -73,6 +73,13 @@
     position: absolute;
     width: 95%;
     top: 33%;
+    left: 2%;
+}
+
+.project .project-wrapper .project-box-wrapper .project-box .sign-laguage-detection-img{
+    position: absolute;
+    width: 95%;
+    top: 50%;
     left: 2%;
 }
 
